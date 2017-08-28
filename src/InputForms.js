@@ -20,7 +20,7 @@ class InputForms extends React.Component {
 
   render () {
     return (
-      <div className="container">  
+      <div className="container forms">  
         <form onSubmit={this.submitForm}>
           <label>
             Speaker Name: 
@@ -40,7 +40,7 @@ class InputForms extends React.Component {
           </label>  
           <button className="btn waves-effect waves-light" type="submit" name="action">submit</button>
         </form>
-        <SpeakersContainer name="Jason" topic="React" />
+        <SpeakersContainer />
       </div>
     );
   };
