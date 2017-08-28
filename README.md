@@ -1,2 +1,2 @@
-##PB Tech React Talk
+##PB Tech
 React/Redux App for a talk.

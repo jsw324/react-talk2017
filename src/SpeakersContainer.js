@@ -7,8 +7,11 @@ const SpeakersContainers = ({ speakers }) => {
   const mapSpeakers = speakers.map((speaker, i) => <Speakers speaker={speaker} key={`speak_${i}`} />);
     return (
       <div>
-        <p>list</p>
-        { mapSpeakers }
+        <br />
+        <h5>Upcoming Talks:</h5>
+        <ul className="collection">
+          { mapSpeakers }
+        </ul>
       </div>
   );
 };
