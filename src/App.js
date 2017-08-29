@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 import { connect } from 'react-redux';
 
-import Container from './Container';
+import Header from './Header';
+import InputForms from './InputForms';
 
 class App extends Component {
   componentDidMount() {
@@ -12,7 +13,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Container />
+        <Header />
+        <InputForms />
       </div>
     );
   }

@@ -3,18 +3,17 @@ import { connect } from 'react-redux';
 
 import Speakers from './Speakers';
 
-const SpeakersContainers = ({ speakers }) => {
-  const mapSpeakers = speakers.map((speaker, i) => <Speakers speaker={speaker} key={`speak_${i}`} />);
-    return (
-      <div>
-        <br />
-        <h5>Upcoming Talks:</h5>
-        <ul className="collection">
-          { mapSpeakers }
-        </ul>
-      </div>
-  );
-};
+const mapSpeakers = (speakers) => speakers.map((speaker, i) => <Speakers speaker={speaker} key={`speak_${i}`} />);
+
+const SpeakersContainers = ({ speakers }) => (
+  <div>
+    <br />
+    <h5>Upcoming Talks:</h5>
+    <ul className="collection">
+      { mapSpeakers(speakers) }
+    </ul>
+  </div>
+);
 
 export default connect(
   state => ({ 
